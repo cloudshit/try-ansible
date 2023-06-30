@@ -69,7 +69,7 @@ resource "aws_instance" "bastion" {
     unzip awscliv2.zip
     ./aws/install
 
-    yum install -y jq curl python3-pip
+    yum install -y jq curl python3-pip git boto3 botocore
     pip3 install ansible
   EOF
 }
